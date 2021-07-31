@@ -4,7 +4,7 @@
 
 ## Expected outcome
 
-[!Output video](media/output.mov)
+[!Output video](media/images.png)
 
 
 
