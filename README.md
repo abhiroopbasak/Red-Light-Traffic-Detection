@@ -4,7 +4,7 @@
 
 ## Expected outcome
 
-![Output video](media/captured_video.avi)
+![Output video](media/captured_video (online-video-cutter.com) (1).mp4)
 
 
 
