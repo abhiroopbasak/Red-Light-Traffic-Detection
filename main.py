@@ -5,6 +5,9 @@ import numpy as np
 
 def redlight_detection():
     cap = cv2.VideoCapture("C:/Users/admin/Desktop/red light/v2.mov")
+    video_cod = cv2.VideoWriter_fourcc(*'XVID')
+    video_output = cv2.VideoWriter('captured_video.avi',video_cod,10,(int(cap.get(3)),int(cap.get(4))))
+
     while (1):
         _, frame = cap.read()
 
@@ -30,14 +33,15 @@ def redlight_detection():
         cv2.rectangle(frame, (x, y), (x + w, y + h), (0, 255, 0), 2)
 
         cv2.imshow('frame', frame)
+        video_output.write(frame)
 
         k = cv2.waitKey(5) & 0xFF
         if k == 27:
             break
-    fourcc = cv2.VideoWriter_fourcc(*'XVID')
-    out = cv2.VideoWriter('output.mov', fourcc, 20.0, (640, 480))
+
     cv2.destroyAllWindows()
     cap.release()
+    video_output.release()
 
 
 
