@@ -20,3 +20,6 @@
 ### Dependency
 
 Can be installed using command
+```python
+pip install opencv-python
+```
