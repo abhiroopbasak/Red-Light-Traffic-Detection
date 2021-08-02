@@ -10,9 +10,13 @@
 
 ## Instructions to run the code
 
-* Download the source and output videos containing footage of traffic
+* Download the source and input video containing footage of traffic
 
 * Update the path of the file in line number 7 of the given code
 
 * Run the code
 
+
+### Dependency
+
+Can be installed using command
